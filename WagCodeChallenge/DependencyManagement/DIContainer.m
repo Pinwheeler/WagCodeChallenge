@@ -8,9 +8,11 @@
 
 #import "DIContainer.h"
 #import "HTTPClient.h"
+#import "UserService.h"
 
 @interface DIContainer ()
 @property HTTPClient *httpClient;
+@property UserService *userService;
 @end
 
 @implementation DIContainer
@@ -18,6 +20,7 @@
 -(instancetype) init {
     if (self = [super init]) {
         self.httpClient = [[HTTPClient alloc] init];
+        self.userService = [[UserService alloc] initWithDependencies:self];
         return self;
     }
     return nil;

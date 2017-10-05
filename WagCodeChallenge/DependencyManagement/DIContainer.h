@@ -15,6 +15,10 @@
 @property (readonly) HTTPClient *httpClient;
 @end
 
-@interface DIContainer : NSObject <HasHTTPClient>
+@protocol HasUserService
+@property (readonly) UserService *userService;
+@end
+
+@interface DIContainer : NSObject <HasHTTPClient, HasUserService>
 
 @end

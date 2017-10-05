@@ -16,8 +16,9 @@
 
 @property NSString *username;
 @property BadgeCount *badges;
-@property KSPromise<UIImage *> *avatar;
+@property NSURL *avatarURL;
 
 - (instancetype)initWithJSON:(NSDictionary *)json;
+- (NSMutableAttributedString *)badgeDisplayString;
 
 @end

@@ -16,4 +16,6 @@
 
 - (instancetype)initWithJSON:(NSDictionary<NSString *, NSNumber *> *)json;
 
+- (NSMutableAttributedString *)badgeDisplayString;
+
 @end

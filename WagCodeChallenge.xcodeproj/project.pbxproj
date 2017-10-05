@@ -13,6 +13,7 @@
 		6813C6B51F86D00B0033011C /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813C6B41F86D00B0033011C /* UserService.m */; };
 		6813C6B91F86D18D0033011C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813C6B81F86D18D0033011C /* User.m */; };
 		6813C6BC1F86D2310033011C /* BadgeCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813C6BB1F86D2310033011C /* BadgeCount.m */; };
+		6813C6CD1F86E5770033011C /* UIColor+Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813C6CC1F86E5770033011C /* UIColor+Palette.m */; };
 		684266621F86A0E1006609EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684266611F86A0E1006609EF /* AppDelegate.m */; };
 		684266651F86A0E1006609EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684266641F86A0E1006609EF /* ViewController.m */; };
 		684266681F86A0E1006609EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684266661F86A0E1006609EF /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 		6813C6B81F86D18D0033011C /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		6813C6BA1F86D2310033011C /* BadgeCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BadgeCount.h; sourceTree = "<group>"; };
 		6813C6BB1F86D2310033011C /* BadgeCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgeCount.m; sourceTree = "<group>"; };
+		6813C6CB1F86E5770033011C /* UIColor+Palette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Palette.h"; sourceTree = "<group>"; };
+		6813C6CC1F86E5770033011C /* UIColor+Palette.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Palette.m"; sourceTree = "<group>"; };
 		6842665D1F86A0E1006609EF /* WagCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WagCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684266601F86A0E1006609EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		684266611F86A0E1006609EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +113,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		6813C6C21F86E2FB0033011C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6813C6CB1F86E5770033011C /* UIColor+Palette.h */,
+				6813C6CC1F86E5770033011C /* UIColor+Palette.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		684266541F86A0E1006609EF = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +143,7 @@
 		6842665F1F86A0E1006609EF /* WagCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				6813C6C21F86E2FB0033011C /* Extensions */,
 				6813C6B61F86D15A0033011C /* Models */,
 				6813C6AC1F86CE9D0033011C /* Constants */,
 				6813C6A41F86AA330033011C /* DependencyManagement */,
@@ -281,6 +294,7 @@
 			files = (
 				6813C6BC1F86D2310033011C /* BadgeCount.m in Sources */,
 				6813C6B91F86D18D0033011C /* User.m in Sources */,
+				6813C6CD1F86E5770033011C /* UIColor+Palette.m in Sources */,
 				684266651F86A0E1006609EF /* ViewController.m in Sources */,
 				684266701F86A0E1006609EF /* main.m in Sources */,
 				6813C6B51F86D00B0033011C /* UserService.m in Sources */,
