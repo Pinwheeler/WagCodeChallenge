@@ -19,8 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Create static dependencies
     DIContainer *container = [[DIContainer alloc] init];
-    NSURL *url = [NSURL URLWithString:@"https://api.stackexchange.com/2.2/users?site=stackoverflow"];
-    [container.httpClient GETRequest:url];
+
     return YES;
 }
 

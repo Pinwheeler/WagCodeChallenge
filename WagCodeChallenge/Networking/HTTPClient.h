@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KSDeferred.h"
+#import "KSPromise.h"
 
 @interface HTTPClient : NSObject
 

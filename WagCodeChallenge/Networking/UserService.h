@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "DIContainer.h"
+#import "KSPromise.h"
+
+@class User;
 
 @interface UserService : NSObject
 
 - (instancetype)initWithDependencies:(id<HasHTTPClient>)dependencies;
+
+- (KSPromise<NSArray<User *> *> *)fetchUsers;
 
 @end
