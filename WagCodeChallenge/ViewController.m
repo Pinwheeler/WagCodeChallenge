@@ -20,6 +20,7 @@
 @property NSArray<User *> *users;
 @property UIImage *placeholderImage;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *loadingScreen;
 
 @end
 
@@ -35,6 +36,9 @@ NSString *userCellIdentifier = @"UserCell";
     [[self.userService fetchUsers] then:^id _Nullable(NSArray<User *> * _Nullable value) {
         self.users = value;
         [self.tableView reloadData];
+        [UIView animateWithDuration:0.5 animations:^{
+            self.loadingScreen.alpha = 0.0;
+        }];
         return nil;
     }];
 }

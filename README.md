@@ -9,6 +9,7 @@ I use this promise library because of familiarity. It's been a staple promise li
 I use AFNetworking because it helps abstract away many of the annoying networking undercarriage (such as managing NSURLSessions) and works nicely with KSPromise. I've never not used AFNetworking on any serious objective-c app.
 
 - Includes image caching by URL as part of UIImageView+AFNetworking
+- Downside: does not natively support activity indicators over the UITableViewCell images while downloading. It DOES, however, support placeholder images. I assumed that this would be adequate. If not, let me know and I can give it another go.
 
 ### UILabel+FormattedText
 Seemed like a nice, convenient extension for adding some colors to the application. 
