@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6813C6A31F86A5F40033011C /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813C6A21F86A5F40033011C /* HTTPClient.m */; };
+		6813C6A71F86AA460033011C /* DIContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813C6A61F86AA460033011C /* DIContainer.m */; };
+		6813C6B21F86CEDF0033011C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813C6B11F86CEDF0033011C /* Constants.m */; };
+		6813C6B51F86D00B0033011C /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813C6B41F86D00B0033011C /* UserService.m */; };
 		684266621F86A0E1006609EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684266611F86A0E1006609EF /* AppDelegate.m */; };
 		684266651F86A0E1006609EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684266641F86A0E1006609EF /* ViewController.m */; };
 		684266681F86A0E1006609EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684266661F86A0E1006609EF /* Main.storyboard */; };
@@ -17,6 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6813C6A11F86A5F40033011C /* HTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		6813C6A21F86A5F40033011C /* HTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		6813C6A51F86AA460033011C /* DIContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIContainer.h; sourceTree = "<group>"; };
+		6813C6A61F86AA460033011C /* DIContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIContainer.m; sourceTree = "<group>"; };
+		6813C6B01F86CEDF0033011C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		6813C6B11F86CEDF0033011C /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		6813C6B31F86D00B0033011C /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
+		6813C6B41F86D00B0033011C /* UserService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
 		6842665D1F86A0E1006609EF /* WagCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WagCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684266601F86A0E1006609EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		684266611F86A0E1006609EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +64,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6813C6A01F86A5C90033011C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6813C6A11F86A5F40033011C /* HTTPClient.h */,
+				6813C6A21F86A5F40033011C /* HTTPClient.m */,
+				6813C6B31F86D00B0033011C /* UserService.h */,
+				6813C6B41F86D00B0033011C /* UserService.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6813C6A41F86AA330033011C /* DependencyManagement */ = {
+			isa = PBXGroup;
+			children = (
+				6813C6A51F86AA460033011C /* DIContainer.h */,
+				6813C6A61F86AA460033011C /* DIContainer.m */,
+			);
+			path = DependencyManagement;
+			sourceTree = "<group>";
+		};
+		6813C6AC1F86CE9D0033011C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6813C6B01F86CEDF0033011C /* Constants.h */,
+				6813C6B11F86CEDF0033011C /* Constants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6813C6B61F86D15A0033011C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		684266541F86A0E1006609EF = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +121,10 @@
 		6842665F1F86A0E1006609EF /* WagCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				6813C6B61F86D15A0033011C /* Models */,
+				6813C6AC1F86CE9D0033011C /* Constants */,
+				6813C6A41F86AA330033011C /* DependencyManagement */,
+				6813C6A01F86A5C90033011C /* Networking */,
 				684266601F86A0E1006609EF /* AppDelegate.h */,
 				684266611F86A0E1006609EF /* AppDelegate.m */,
 				684266631F86A0E1006609EF /* ViewController.h */,
@@ -219,7 +271,11 @@
 			files = (
 				684266651F86A0E1006609EF /* ViewController.m in Sources */,
 				684266701F86A0E1006609EF /* main.m in Sources */,
+				6813C6B51F86D00B0033011C /* UserService.m in Sources */,
+				6813C6A31F86A5F40033011C /* HTTPClient.m in Sources */,
 				684266621F86A0E1006609EF /* AppDelegate.m in Sources */,
+				6813C6A71F86AA460033011C /* DIContainer.m in Sources */,
+				6813C6B21F86CEDF0033011C /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

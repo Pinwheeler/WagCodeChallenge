@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DIContainer.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // Create static dependencies
+    DIContainer *container = [[DIContainer alloc] init];
+    NSURL *url = [NSURL URLWithString:@"https://api.stackexchange.com/2.2/users?site=stackoverflow"];
+    [container.httpClient GETRequest:url];
     return YES;
 }
 
